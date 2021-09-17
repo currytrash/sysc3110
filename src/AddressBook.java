@@ -8,7 +8,7 @@ public class AddressBook {
     public AddressBook() {
         buddyList = new ArrayList<BuddyInfo>();
     }
-    public void InsertBuddy (BuddyInfo bud){
+    public void addBuddy (BuddyInfo bud){
         buddyList.add(bud);
     }
 
@@ -18,6 +18,11 @@ public class AddressBook {
 
     public static void main (String[] args){
         System.out.println("Address Book");
+        BuddyInfo buddy = new BuddyInfo("yahya" ,"carelton","613");
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
+
     }
 
 
